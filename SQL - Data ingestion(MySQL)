@@ -1,0 +1,10 @@
+LOAD DATA LOCAL INFILE 'B:/S3/best_imaging_dataset123.csv'
+INTO TABLE imaging_tests_raw
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(encounter_id, patient_id, test_date, test_category, test_name, modality,
+ referring_physician, technician, equipment_id, insurance_provider, cost, result_value,
+ result_flag, turnaround_time_hours, report_released_at, payment_status, no_show,
+ cancellation, image_size_mb, year_mont, weekday, hour, is_imaging, gender);
