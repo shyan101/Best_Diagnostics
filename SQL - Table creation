@@ -1,0 +1,27 @@
+
+CREATE TABLE imaging_tests_raw (
+    encounter_id VARCHAR(100),
+    patient_id VARCHAR(100),
+    test_date VARCHAR(100),
+    test_category VARCHAR(100),
+    test_name VARCHAR(200),
+    modality VARCHAR(100),
+    referring_physician VARCHAR(200),
+    technician VARCHAR(100),
+    equipment_id VARCHAR(100),
+    insurance_provider VARCHAR(200),
+    cost VARCHAR(50),
+    result_value VARCHAR(100),
+    result_flag VARCHAR(100),
+    turnaround_time_hours VARCHAR(50),
+    report_released_at VARCHAR(100),
+    payment_status VARCHAR(100),
+    no_show VARCHAR(50),
+    cancellation VARCHAR(50),
+    image_size_mb VARCHAR(50),
+    year_mont VARCHAR(20),
+    weekday VARCHAR(20),
+    hour VARCHAR(20),
+    is_imaging VARCHAR(20),
+    gender VARCHAR(50)
+);
